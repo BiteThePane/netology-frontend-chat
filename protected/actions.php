@@ -8,7 +8,7 @@ function send($data)
 function createMessage()
 {
     $message = $_POST['message'] ?? null;
-    $username = $_POST['username'] ?? null;
+    $username = $_POST['username:'] ?? null;
 
     if (empty($message) || empty($username)) {
         send([
